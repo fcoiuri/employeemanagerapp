@@ -1,7 +1,6 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
 body{
-    margin-top:20px;
     background: #f5f5f5;
 }
 .card {
@@ -9,6 +8,13 @@ body{
     -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
     margin-bottom: 30px;
+    font-size: 78%;
+}
+.card img{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+    
 }
 .w-60 {
     width: 60px;
@@ -31,4 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
     color: #707070;
+}
+nav {
+    margin-bottom: 15px;
+}
+
+nav > div > ul > li > a:hover {
+    background-color: #353333;
 }
