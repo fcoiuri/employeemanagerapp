@@ -71,7 +71,7 @@
          </div>
          <div class="modal-body">
             <!-- <form>  -->
-            <form #addForm="ngForm" (ngSubmit)="onAddEmloyee(addForm)">
+            <form #addForm="ngForm" (ngSubmit)="onAddEmployee(addForm)">
                <div class="form-group">
                   <label for="name">Nome</label>
                   <input type="text" ngModel name="name" class="form-control" id="name" placeholder="Nome" required>
@@ -153,9 +153,10 @@
                      id="imageUrl" placeholder="URL da imagem" required>
                </div>
                <div class="modal-footer">
-                  <button type="button" id="update-employee-form" data-dismiss="modal" class="btn btn-secondary">Fechar</button>
+                  <button type="button" id="update-employee-form" data-dismiss="modal"
+                     class="btn btn-secondary">Fechar</button>
                   <!-- <button href="#" data-dismiss="modal" class="btn btn-primary" >Atualizar</button> -->
-                  <button (click)="onUpdateEmloyee(editForm.value)" data-dismiss="modal"
+                  <button (click)="onUpdateEmployee(editForm.value)" data-dismiss="modal"
                      class="btn btn-primary">Atualizar</button>
                </div>
             </form>
@@ -176,12 +177,11 @@
             </button>
          </div>
          <div class="modal-body">
-            <!-- <p>Tem certeza que deseja deletar? {{deleteEmployee?.name}}?</p> -->
-            <p>Tem certeza que deseja deletar? </p>
+            <p>Tem certeza que deseja deletar o funcionário(a) {{deleteEmployee?.name}}?</p>
             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-               <button href="#" class="btn btn-danger" data-dismiss="modal">Yes</button>
-               <!-- <button (click)="onDeleteEmloyee(deleteEmployee?.id)" class="btn btn-danger" data-dismiss="modal">Yes</button> -->
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+               <button href="#" (click)="onDeleteEmployee(deleteEmployee?.id!)" class="btn btn-danger" data-dismiss="modal">Sim</button>
+               <!-- <button (click)="onDeleteEmployee(deleteEmployee?.id)" class="btn btn-danger" data-dismiss="modal">Yes</button> -->
             </div>
          </div>
       </div>
