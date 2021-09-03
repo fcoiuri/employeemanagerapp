@@ -44,4 +44,5 @@ nav {
 
 nav > div > ul > li > a:hover {
     background-color: #353333;
+    cursor: pointer;
 }
