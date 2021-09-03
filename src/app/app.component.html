@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-   <a class="navbar-brand" href="/">Gestão de Funcionários</a>
+   <a class="navbar-brand" href="/" title="Página Inicial">Gestão de Funcionários</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
       aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -7,13 +7,13 @@
    <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav mr-auto">
          <li class="nav-item active">
-            <a class="nav-link" (click)="onOpenModal(null, 'add')">Adicionar Funcionário<span
+            <a class="nav-link" (click)="onOpenModal(null, 'add')" title="Adicionar Funcionário(a)">Adicionar Funcionário(a)<span
                   class="sr-only">(current)</span></a>
          </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-         <input class="form-control mr-sm-2" type="search" placeholder="Buscar Funcionário..." aria-label="Search">
-         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+         <input class="form-control mr-sm-2" type="search" placeholder="Buscar Funcionário..." aria-label="Search" title="Buscar">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" title="Buscar">Buscar</button>
       </form>
    </div>
 </nav>
@@ -23,7 +23,7 @@
          <div class="card m-b-30">
             <div class="card-body row">
                <div class="col-6">
-                  <a href="{{employee?.imageUrl}}" target="_blank"><img src="{{employee?.imageUrl}}" alt=""
+                  <a href="{{employee?.imageUrl}}" target="_blank" title="Foto"><img src="{{employee?.imageUrl}}" alt=""
                         class=" rounded-circle img-thumbnail"></a>
                </div>
                <div class="col-6 card-title align-self-center mb-0">
@@ -32,24 +32,24 @@
                </div>
             </div>
             <ul class="list-group list-group-flush">
-               <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email : <a
+               <li class="list-group-item"><i class="fa fa-envelope float-right" title="E-mail"></i>Email : <a
                      href="#">{{employee?.email}}</a></li>
-               <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone : {{employee?.phone}}</li>
+               <li class="list-group-item" ><i class="fa fa-phone float-right" title="Telefone"></i>Phone : {{employee?.phone}}</li>
             </ul>
             <div class="card-body">
                <div class="float-right btn-group btn-group-sm">
                   <a (click)="onOpenModal(employee, 'edit')" class="btn btn-primary tooltips" data-placement="top"
-                     data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+                     data-toggle="tooltip" title="Editar"><i class="fa fa-pencil"></i> </a>
                   <a (click)="onOpenModal(employee, 'delete')" class="btn btn-secondary tooltips" data-placement="top"
-                     data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-times"></i></a>
+                     data-toggle="tooltip" title="Deletar"><i class="fa fa-times"></i></a>
                </div>
                <ul class="social-links list-inline mb-0">
                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips"
-                        href="" data-original-title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                        href="" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips"
-                        href="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        href="" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips"
-                        href="" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
+                        href="" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                </ul>
             </div>
          </div>
@@ -98,9 +98,9 @@
                </div>
                <div class="modal-footer">
                   <button type="button" id="add-employee-form" class="btn btn-secondary"
-                     data-dismiss="modal">Fechar</button>
+                     data-dismiss="modal" title="Fechar">Fechar</button>
                   <!-- <button  type="submit" class="btn btn-primary" >Salvar</button> -->
-                  <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary">Salvar</button>
+                  <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" title="Salvar">Salvar</button>
                </div>
             </form>
          </div>
@@ -154,10 +154,10 @@
                </div>
                <div class="modal-footer">
                   <button type="button" id="update-employee-form" data-dismiss="modal"
-                     class="btn btn-secondary">Fechar</button>
+                     class="btn btn-secondary" title="Fechar">Fechar</button>
                   <!-- <button href="#" data-dismiss="modal" class="btn btn-primary" >Atualizar</button> -->
                   <button (click)="onUpdateEmployee(editForm.value)" data-dismiss="modal"
-                     class="btn btn-primary">Atualizar</button>
+                     class="btn btn-primary" title="Atualizar">Atualizar</button>
                </div>
             </form>
          </div>
@@ -179,9 +179,9 @@
          <div class="modal-body">
             <p>Tem certeza que deseja deletar o funcionário(a) {{deleteEmployee?.name}}?</p>
             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-               <button href="#" (click)="onDeleteEmployee(deleteEmployee?.id!)" class="btn btn-danger" data-dismiss="modal">Sim</button>
-               <!-- <button (click)="onDeleteEmployee(deleteEmployee?.id)" class="btn btn-danger" data-dismiss="modal">Yes</button> -->
+               <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Não">Não</button>
+               <button href="#" (click)="onDeleteEmployee(deleteEmployee?.id!)" class="btn btn-danger"
+                  data-dismiss="modal" title="Sim">Sim</button>
             </div>
          </div>
       </div>
@@ -196,3 +196,13 @@
       <p>Nenhum funcionário foi encontrado.</p>
    </div>
 </div>
+
+
+
+<footer class="rodape">
+   <div class="text-center py-3">
+      Desenvolvido por:
+      <a href="https://github.com/fcoiuri" target="_blank"> Iuri Mendes </a>
+      <i class="fa fa-github" title="GitHub"></i>
+   </div>
+</footer>

@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social-links li a {
     -webkit-border-radius: 50%;
-    background-color: rgba(89,206,181,.85);
+    background-color: rgba(21, 51, 44, 0.85);
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -34,6 +34,17 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     width: 30px;
     font-size: 12px;
+}
+.list-group-item  i{
+    background-color: rgba(21, 51, 44, 0.85);
+    color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 21px;
+    width: 21px;
+    text-align: center;
+    font-size: 16px;
+    
 }
 a {
     color: #707070;
@@ -45,4 +56,9 @@ nav {
 nav > div > ul > li > a:hover {
     background-color: #353333;
     cursor: pointer;
+}
+
+.rodape {
+    background-color: #292b2c;
+    color: white;
 }
