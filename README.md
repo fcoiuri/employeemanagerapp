@@ -1,11 +1,12 @@
 # Employeemanagerapp
 
-## Projeto feito utilizando Angular no front e Bootstrap.
+## Projeto feito utilizando Angular e Bootstrap no front.  
+## O back se encontra no projeto ["employees"] (https://github.com/fcoiuri/employees)
 
 ### Imagens do projeto:
 
 <p align="center">
-  <b>Página Inicial:</b><br>
+  <b>Página Inicial (Responsivo):</b><br>
   <font>
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/HomePageRes.JPG" width = "495" height =  "849" >
   </font>
