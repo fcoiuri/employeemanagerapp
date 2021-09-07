@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { EmployeeService } from './employee.service';
 import { FormsModule } from '@angular/forms';
 
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +17,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

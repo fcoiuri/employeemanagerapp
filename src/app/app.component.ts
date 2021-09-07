@@ -93,5 +93,4 @@ export class AppComponent implements OnInit {
     button.click();
   }
 
-
 }

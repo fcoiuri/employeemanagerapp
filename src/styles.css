@@ -61,4 +61,9 @@ nav > div > ul > li > a:hover {
 .rodape {
     background-color: #292b2c;
     color: white;
+    /* position: fixed; */
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
