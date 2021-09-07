@@ -1,7 +1,7 @@
 # Employeemanagerapp
 
 ## Projeto feito utilizando Angular e Bootstrap no front.  
-## O back se encontra no projeto ["employees"] (https://github.com/fcoiuri/employees)
+## O back se encontra no projeto ["employees"](https://github.com/fcoiuri/employees)
 
 ### Imagens do projeto:
 
