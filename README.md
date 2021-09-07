@@ -7,7 +7,7 @@
 <p align="center">
   <b>Página Inicial:</b><br>
   <font>
-    <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/HomePage.JPG" width = "2504" height =  "951" >
+    <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/HomePageRes.JPG" width = "495" height =  "849" >
   </font>
   <br><br>
   
