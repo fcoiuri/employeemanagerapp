@@ -7,9 +7,7 @@
 
 <p align="center">
   <b>Página Inicial (Responsivo):</b><br>
-  <font>
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/HomePageRes.JPG" width = "495" height =  "849" >
-  </font>
   <br><br>
   
   <b>Adicionar Funcionário:</b><br>
