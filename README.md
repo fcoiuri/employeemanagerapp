@@ -17,7 +17,7 @@
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/EditFunc.JPG" width = "902" height =  "851" >
   <br><br>
   <b>Buscar Funcionário:</b><br>
-    <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/Search.JPG" width = "499" height =  "834" >
+    <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/Search.JPG" width = "491" height =  "839" >
   <br><br>
   <b>Deletar Funcionário:</b><br>
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/DeleteFunc.JPG" width = "707" height =  "451" >
