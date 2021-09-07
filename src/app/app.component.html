@@ -12,8 +12,8 @@
          </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-         <input class="form-control mr-sm-2" type="search" placeholder="Buscar Funcionário..." aria-label="Search" title="Buscar">
-         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" title="Buscar">Buscar</button>
+         <input (ngModelChange)="searchEmployees(key.value)" #key="ngModel" ngModel name="key"
+         class="form-control mr-sm-2" type="search" placeholder="Buscar Funcionário..." aria-label="Search" title="Buscar">
       </form>
    </div>
 </nav>
@@ -196,7 +196,7 @@
 
 
 
-<footer class="rodape">
+<footer class="rodape fixed-bottom">
    <div class="text-center py-3">
       Desenvolvido por:
       <a href="https://github.com/fcoiuri" target="_blank"> Iuri Mendes </a>
