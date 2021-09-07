@@ -12,9 +12,6 @@
   <b>Adicionar Funcionário:</b><br>
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/AddFunc.JPG" width = "952" height =  "857">
   <br><br>
-
-</p>
-  
   <b>Editar Funcionário:</b><br>
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/EditFunc.JPG" width = "902" height =  "851">
   <br><br>
@@ -24,4 +21,6 @@
   <b>Deletar Funcionário:</b><br>
     <img src = "https://github.com/fcoiuri/employeemanagerapp/blob/master/src/assets/img/DeleteFunc.JPG" width = "707" height =  "451">
   <br><br>
+</p>
+  
 
